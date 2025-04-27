@@ -129,8 +129,8 @@
 
 
 
-#新建
-#https://github.com/jason280121/python-crawler.git
+#新建專案
+#git remote add origin https://github.com/jason280121/python-crawler.git
 
 
 
