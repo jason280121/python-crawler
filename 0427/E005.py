@@ -129,11 +129,16 @@
 
 
 
-#新建專案
+#新建專案，重新連線
 #git remote add origin https://github.com/jason280121/python-crawler.git
 
 
+# 上傳到github
+#git push origin master
 
+
+#15:53
+# pip install matplotlib
 
 
 
