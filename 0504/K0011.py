@@ -9,11 +9,20 @@ plt.rc('font',family='Microsoft Jhenghei')
 datas = pd.read_csv('travel.csv')
 # print(datas)
 
-labels = datas.columns[2:-1]
-# print(labels)
+total = datas.iloc[1]['亞洲地區']
+subtotal = datas.iloc[-1]['小計']
+other = int(total) - int(subtotal)
 
-data = datas.iloc[1][2:-1]
-# print(data)
+
+labels = list(datas.columns[2:-1])
+labels.append('其他')
+
+data = list(datas.iloc[1][2:-1])
+data.append(other)
+
+print(labels)
+
+
 
 plt.pie(data,
         labels=labels,
