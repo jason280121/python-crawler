@@ -8,7 +8,7 @@ datas = pd.read_csv('Restaurant_C_f.csv')
 # print(datas.columns)
 # print(datas['Name'])
 # print(datas['Add'])
-# print(f'{datas['Name']}:{datas['Add']}')
+
 
 
 
@@ -20,8 +20,7 @@ result = datas[condition]
 # print(result['Add'])
 # print(result['Name'])
 
-# for data in result:
-#     print(f'{data['Name']}:{data['Add']}')
+
 
 
 
@@ -35,7 +34,7 @@ result = datas[condition]
 # print(datas['animal_kind'])
 # condition = datas['animal_kind'].str.contains('貓')
 result = datas[condition]
-# print(result)
+print(result)
 
 # print(datas['animal_Variety'])
 

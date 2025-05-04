@@ -87,7 +87,7 @@ data4 = pd.DataFrame(
 
 
 #顯示3 gender
-# condtition  = data4['gender'].str.contains('F')
+condtition  = data4['gender'].str.contains('F')
 print(data4[condtition])
 
 #顯示3 gender

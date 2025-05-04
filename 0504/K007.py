@@ -5,12 +5,14 @@ import pandas as pd
 
 #下載csv檔
 datas = pd.read_csv('Restaurant_C_f.csv')
+# datas = pd.read_csv('Restaurant_C_f.csv',encoding='utf-8')
+# datas = pd.read_csv('Restaurant_C_f.csv',encoding='big5')
 # print(datas)
 
 # print(datas.columns)
 # print(datas['Name'])
 # print(datas['Add'])
-# print(f'{datas['Name']}:{datas['Add']}')
+
 
 
 
@@ -37,6 +39,8 @@ result =result.drop(['Id','Px','Py'], axis=1)
 
 #儲存全部
 result.to_excel('chungli.xlsx')
+
+
 
 
 

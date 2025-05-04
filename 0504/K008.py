@@ -1,63 +1,44 @@
 
-import pandas as pd
-
-#openpyxl
-
-#下載csv檔
-datas = pd.read_csv('Restaurant_C_f.csv')
-# print(datas)
-
-# print(datas.columns)
-# print(datas['Name'])
-# print(datas['Add'])
-# print(f'{datas['Name']}:{datas['Add']}')
+# import pandas as pd
+import matplotlib.pyplot as plt
 
 
 
-# 11:45
-#大五碼
-#encoding = 'big5'
+#設定顯示字體
+#正黑體
+plt.rc('font',family ='Microsoft Jhenghei')
 
-#抓中壢資料
-condition = datas['Add'].str.contains('中壢')
-result = datas[condition]
-# print(result)
-# print(result['Add'])
-# print(result['Name'])
-
-#只存三個欄位
-# result =result[['Name','Add','Tel']]
-
-#刪欄位資料
-result =result.drop(['Id','Px','Py'], axis=1)
-
-#刪列資料
-# result =result.drop(['Id','Px','Py'], axis=0)
-
-
-#儲存全部
-result.to_excel('chungli.xlsx')
+datas = [22,55,88]
 
 
 
+# labels=['A','B','C']
+labels=['初階','中階','高階']
+color= ['purple','blue','yellow']
+
+#圓餅圖
+# plt.pie([10,20,30])
 
 
+plt.pie(datas,
+        labels=labels,
+        #radius 比例
+        radius=1,
+
+        #圖標距離(外觀) 0.5
+        labeldistance=1.2,
+
+        #文字屬性, 文字大小,normal是預設值、bold是粗體
+        textprops={'size':16,
+        'weight':'bold'},
+
+        #百份比
+        autopct='%.2f%%',
+        colors=color
 
 
+        )
 
-#政府資料開放平臺
-#動物
-#動物認領養  下載csv
+plt.legend()
 
-# datas = pd.read_csv('COA_OpenData.csv')
-# print(datas.columns)
-# print(datas['animal_kind'])
-# condition = datas['animal_kind'].str.contains('貓')
-result = datas[condition]
-# print(result)
-
-# print(datas['animal_Variety'])
-
-
-#12:15
-
+plt.show()
