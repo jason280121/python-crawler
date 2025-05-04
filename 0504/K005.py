@@ -40,9 +40,11 @@ data3 = pd.DataFrame(
 
 data4 = pd.DataFrame(
     [
-        {'name':'Zac','age':32},
-        {'name':'Max','age':28},
-        {'name':'Andy','age':30}
+        {'name': 'Zac', 'age': 32, 'gender': 'M'},
+        {'name': 'Max', 'age': 28, 'gender': 'M'},
+        {'name': 'Andy', 'age': 30, 'gender': 'M'},
+        {'name': 'Amy', 'age': 22, 'gender': 'F'},
+        {'name': 'Laura', 'age': 26, 'gender': 'F'}
     ]
 )
 
@@ -58,3 +60,36 @@ data4 = pd.DataFrame(
 # print(data4.loc[2])
 
 #11:19
+
+
+
+
+
+
+#最大值
+# print(data4['age'].max())
+
+#最小值
+# print(data4['age'].min())
+
+#平均值
+# print(data4['age'].mean())
+
+#標準差
+# print(data4['age'].std())
+
+#顯示1 age
+# condition  = data4['age'] > 30
+# print(data4[condition])
+
+#顯示2 age
+# print(data4[data4['age'] > 30])
+
+
+#顯示3 gender
+# condtition  = data4['gender'].str.contains('F')
+print(data4[condtition])
+
+#顯示3 gender
+# print(data4[data4['gender'].str.contains('M')])
+

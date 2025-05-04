@@ -47,7 +47,7 @@ data4 = pd.DataFrame(
 )
 
 
-# print(data4)
+print(data4)
 
 
 # print(data4.size)
