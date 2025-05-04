@@ -28,8 +28,9 @@ imgs = soup.find_all('img')
 # print(img)
 i =1
 for img in imgs :
-    #
+
     # print(img['data-landscape-url'])
+
     #路徑
     path =img['data-landscape-url']
     #取得圖片路徑

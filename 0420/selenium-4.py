@@ -20,11 +20,11 @@ driver.get(url)
 n = 0
 while n < 3:
     driver.execute_script('window.scrollTo(0,document.body.scrollHeight-1000)')
-    time.sleep(5)
+    time.sleep(2)
     n += 1
 
-titles = driver.find_elements(By.CLASS_NAME, '.product-card__link-overlay')
-# titles = driver.find_elements(By.CSS_SELECTOR,'.product-card__titles')
+# titles = driver.find_elements(By.CLASS_NAME, '.product-card__link-overlay')
+titles = driver.find_elements(By.CSS_SELECTOR,'.product-card__titles')
 
 
 for title in titles:

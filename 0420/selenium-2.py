@@ -34,8 +34,8 @@ driver.get(url)
 # funtime網站, 讀取標題文字
 # titles =driver.find_elements(By.CLASS_NAME, 'good_url')
 # print(titles.text)
-# for jason in titles:
-#     print(jason.text)
+# # for jason in titles:
+# #     print(jason.text)
 
 
 # 天瓏書局 , 輸入文字地方 id

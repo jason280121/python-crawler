@@ -1,6 +1,6 @@
 import time
 
-from openpyxl.styles.builtins import title
+# from openpyxl.styles.builtins import title
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -13,8 +13,8 @@ driver.get(url)
 # driver.maximize_window()
 
 
-# titles = driver.find_elements(By.CLASS_NAME,'.product-card__link-overlay')
-titles = driver.find_elements(By.CSS_SELECTOR, '.product-card__titles')
+titles = driver.find_elements(By.CLASS_NAME,'product-card__link-overlay')
+# titles = driver.find_elements(By.CSS_SELECTOR, '.product-card__titles')
 
 for title in titles:
     print(title.text)

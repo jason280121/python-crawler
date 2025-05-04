@@ -99,7 +99,7 @@
 #git reset ***
 
 
-#14:23 上傳 ，進入git hub
+#14:23 commit 完成後，準備上傳上傳 ，進入git hub
 # https://github.com/jason280121/0427.git
 
 #檢查
@@ -136,7 +136,7 @@
 #git push origin master
 
 
-#15:53
+#15:53s
 # pip install matplotlib
 
 
