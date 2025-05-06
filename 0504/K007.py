@@ -33,7 +33,7 @@ result = datas[condition]
 #刪欄位資料
 result =result.drop(['Id','Px','Py'], axis=1)
 
-#刪列資料
+#刪欄資料
 # result =result.drop(['Id','Px','Py'], axis=0)
 
 

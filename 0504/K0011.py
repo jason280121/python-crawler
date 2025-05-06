@@ -2,9 +2,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+#交通部觀光署觀光統計資料庫
 # url ='https://stat.taiwan.net.tw/'
 
+
 plt.rc('font',family='Microsoft Jhenghei')
+
+
 
 datas = pd.read_csv('travel.csv')
 # print(datas)

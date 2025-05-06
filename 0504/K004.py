@@ -16,8 +16,10 @@ data3 = pd.DataFrame(
 )
 # print(data3)
 
-#size 欄位釋量
+#size 欄位數量
 # print(data3.size)
+
+
 
 #shape 形狀
 # print(data3.shape)
@@ -33,9 +35,16 @@ data3 = pd.DataFrame(
 # 三列二行
 # print(data3['name'])
 # print(data3['age'])
+
+
 # print(data3.iloc[0])
 # print(data3.loc[1])
+
 # print(data3.loc['C'])
+
+
+
+
 
 
 data4 = pd.DataFrame(

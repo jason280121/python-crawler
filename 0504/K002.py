@@ -18,10 +18,10 @@ plt.plot(listx,listy, marker='s', color='#ff8c00', linestyle='-',linewidth=1,mar
 #標題
 plt.title('test')
 
-#日
+#日(X軸)
 plt.xlabel('day')
 
-#氣溫
+#氣溫(y軸)
 plt.ylabel('degree')
 
 
