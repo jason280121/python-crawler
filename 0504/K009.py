@@ -68,6 +68,7 @@ total =sum(data)
 
 # data_2= [d for d in data]
 # data_2= [d/2 for d in data]
+
 data_2= [str(100 * d/total) +'%'  for d in data]
 # data_2= [str(round(100 * d/total)) +'%'  for d in data]
 print(data_2)

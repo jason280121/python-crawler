@@ -25,7 +25,7 @@ plt.pie(datas,
         #radius 比例
         radius=1,
 
-        #圖標距離(外觀) 0.5
+        #文字與圖標距離(外觀) 0.5
         labeldistance=1.2,
 
         #文字屬性, 文字大小,normal是預設值、bold是粗體

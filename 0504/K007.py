@@ -33,9 +33,8 @@ result = datas[condition]
 #刪欄位資料
 result =result.drop(['Id','Px','Py'], axis=1)
 
-#刪欄資料
-# result =result.drop(['Id','Px','Py'], axis=0)
-
+#刪欄位資料
+# result =result.drop(result.index[0:3], axis=0)
 
 #儲存全部
 result.to_excel('chungli.xlsx')
